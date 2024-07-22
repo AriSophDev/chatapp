@@ -1,24 +1,33 @@
 import React from "react";
 import { View, StyleSheet, Text, SafeAreaView } from "react-native";
+import { SearchBar } from "../Components/SearchBar";
 
 const ChatList = () => {
   return (
     <SafeAreaView>
       <View style={styles.chatList}>
-        <Text style={styles.chatListText}>CHATS</Text>
+        <Text style={styles.chatListText}>Chats</Text>
       </View>
     </SafeAreaView>
   );
-};
+}
 
-export default ChatList;
+    
+  
 
+export default ChatList
+    
 const styles = StyleSheet.create({
-  chatListText: {
+  chatList: {
     paddingTop: 60,
     paddingLeft: 20,
     justifyContent: "flex-start",
+  },
+  chatListText: {
     fontSize: 25,
     fontWeight: "bold",
   },
 });
+
+
+
